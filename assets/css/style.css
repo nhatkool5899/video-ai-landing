@@ -15,7 +15,7 @@
 
 .logo{
     display: block;
-    width: 120px;
+    width: 80px;
 }
 
 .navigation{
@@ -99,10 +99,10 @@
 
 
 .banner-lecture{
-    max-width: 800px;
+    max-width: 470px;
     position: relative;
-    top: 0;
-    left: 50%;
+    top: 4px;
+    left: 70%;
 }
 
 .video-content{
@@ -358,4 +358,30 @@
 .partner-content img{
     object-fit: contain;
     height: 100%;
+}
+
+
+.ladi-box{
+    list-style: disc;
+    background: #fff;
+    color: #08081d;
+    padding: 20px 30px;
+}
+
+.ladi-box-text{
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.ladi-box-text p span{
+    font-size: 20px;
+    padding-bottom: 10px;
+    display: block;
+}
+
+
+.lectures{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
 }
