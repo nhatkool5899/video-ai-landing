@@ -1,0 +1,203 @@
+
+.container{
+    margin: auto;
+    max-width: 100%;
+    padding: 0 10px;
+}
+
+@media screen and (min-width: 576px){
+    .container{
+        max-width: 540px;
+    }
+
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        max-width: 720px;
+    }
+}
+
+
+@media screen and (min-width: 992px){
+    .container{
+        max-width: 960px;
+    }
+
+
+}
+
+@media screen and (min-width: 1200px){
+    .container{
+        max-width: 1140px;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .container{
+        max-width: 1320px;
+    }
+
+    
+}
+
+@media screen and (max-width: 1400px){
+    .banner-lecture{
+        left: 68%;
+        width: 380px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+
+}
+
+@media screen and (max-width: 992px){
+
+}
+
+
+@media screen and (max-width: 768px){
+
+
+}
+
+@media screen and (max-width: 576px){
+
+    .button-hide, .logo-title{
+        display: none;
+    }
+
+    .header-title{
+        font-size: 16px;
+    }
+
+    .logo{
+        width: 130px;
+    }
+
+    .logo img{
+        width: 64px;
+    }
+
+    .banner-content{
+        top: 30px;
+        left: 0;
+        transform: translateY(0);
+    }
+
+    .wrapper-content{
+        max-width: 84%;
+        padding-left: 20px;
+    }
+
+    .wrapper-content h3{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .wrapper-content h1{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .wrapper-content p{
+        font-size: 13px;
+        padding-right: 20px;
+    }
+
+    .btn-primary.btn-lg{
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+
+    .banner-lecture{
+        width: 180px;
+        padding-top: 120px;
+        left: 54%;
+    }
+
+    .wrapper-title{
+        margin-top: 0;
+    }
+
+    .section{
+        padding: 40px 0;
+    }
+
+    .ladi-group{
+        padding: 20px 0;
+    }
+
+    .head-title{
+        font-size: 16px;
+    }
+
+    .wrapper-title h2{
+        font-size: 20px;
+    }
+
+    .wrapper-title p{
+        font-size: 13px;
+    }
+
+    .program__inner.reverse{
+        flex-direction: column-reverse;
+    }
+
+    .program__image, .program__context{
+        width: 100%;
+    }
+
+    .context__list > li > p{
+        font-size: 16px;
+    }
+
+    .wrapper-title h3{
+        font-size: 18px;
+    }
+
+    .video-content{
+        padding: 0;
+    }
+
+    .video-iframe{
+        border: 4px solid var(--primary-color);
+        width: 100%;
+    }
+
+    .video-iframe video{
+        width: 100%;
+        height: 200px;
+    }
+
+    .video-title{
+        font-size: 16px;
+    }
+
+    .content-grid-2, .ladi-group-content{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .col-body ul > li{
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .lectures, .content-grid{
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+
+    .wrapper-grid{
+        padding: 10px 0;
+    }
+
+    .text-word{
+        font-size: 18px;
+    }
+
+    .gallery-video{
+        grid-template-columns: repeat(1,1fr);
+        gap: 15px;
+    }
+}
