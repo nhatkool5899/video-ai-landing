@@ -515,7 +515,6 @@
 }
 
 .layout__innner{
-    margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 40px;
@@ -539,7 +538,7 @@
 }
 
 .content__list{
-    padding-left: 30px;
+    padding-left: 20px;
     list-style: disc;
     color: #000;
 }

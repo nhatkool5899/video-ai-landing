@@ -515,7 +515,6 @@
 }
 
 .layout__innner{
-    margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 40px;
@@ -529,21 +528,4 @@
 
 .content__image{
     max-width: 120px;
-}
-
-.content__name{
-    padding: 14px 0;
-    font-weight: 700;
-    color: #000;
-    font-size: 22px;
-}
-
-.content__list{
-    padding-left: 30px;
-    list-style: disc;
-    color: #000;
-}
-
-.content__item{
-    padding: 6px 0;
 }
