@@ -515,7 +515,10 @@
 }
 
 .layout__innner{
-    
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
 }
 
 .content__inner{
@@ -591,7 +594,6 @@
 
 .content__item .desc ul{
     list-style: disc;
-    padding-left: 30px;
 }
 
 .content__item .desc li{
