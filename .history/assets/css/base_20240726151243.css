@@ -92,10 +92,6 @@ a{
     margin: 10px auto;
 }
 
-.wrapper-title h2 span{
-    color: rgb(255, 222, 89);
-}
-
 
 .wrapper-title p{
     font-style: italic;
@@ -125,10 +121,10 @@ a{
     position: relative;
     overflow: hidden;
     border-radius: 5px;
-    animation: colorText 2s ease infinite;
+    animation: colorText 3s ease infinite;
 }
 @keyframes colorText {
-    50%{color: #e66401;}
+    0%{color: #ef6b06;}
     100%{color: #e32e00;}
 }
 

@@ -92,10 +92,6 @@ a{
     margin: 10px auto;
 }
 
-.wrapper-title h2 span{
-    color: rgb(255, 222, 89);
-}
-
 
 .wrapper-title p{
     font-style: italic;
@@ -124,14 +120,8 @@ a{
     color: #ef6b06;
     position: relative;
     overflow: hidden;
-    border-radius: 5px;
-    animation: colorText 2s ease infinite;
+    border-radius: 10px;
 }
-@keyframes colorText {
-    50%{color: #e66401;}
-    100%{color: #e32e00;}
-}
-
 .title-inner::before{
     content: "";
     display: block;

@@ -92,10 +92,6 @@ a{
     margin: 10px auto;
 }
 
-.wrapper-title h2 span{
-    color: rgb(255, 222, 89);
-}
-
 
 .wrapper-title p{
     font-style: italic;
@@ -119,19 +115,11 @@ a{
     text-transform: uppercase;
     font-size: 32px;
     margin: 10px auto;
-    padding: 10px 20px;
+    padding: 8px 14px;
     background: #fff;
     color: #ef6b06;
     position: relative;
-    overflow: hidden;
-    border-radius: 5px;
-    animation: colorText 2s ease infinite;
 }
-@keyframes colorText {
-    50%{color: #e66401;}
-    100%{color: #e32e00;}
-}
-
 .title-inner::before{
     content: "";
     display: block;
