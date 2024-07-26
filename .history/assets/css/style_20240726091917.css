@@ -626,7 +626,7 @@
     padding-left: 30px;
 }
 .content__item .desc ul::marker{
-    color: rgba(var(--clr),1) !important;
+    color: rgba(var(--clr),1);
 }
 
 .content__item .desc li{
