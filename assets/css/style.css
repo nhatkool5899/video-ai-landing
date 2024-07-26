@@ -445,6 +445,9 @@
     width: 50%;
     position: relative;
 }
+.program__image video{
+    width: 100%;
+}
 
 .program__context{
     width: calc(50% - 40px);
