@@ -80,10 +80,10 @@ a{
 }
 
 .wrapper-title h2{
-    font-weight: 900;
+    font-weight: 700;
     text-transform: uppercase;
-    font-size: 32px;
-    line-height: 1.5;
+    font-size: 34px;
+    margin-bottom: 10px;
     max-width: 920px;
     margin: 10px auto;
 }
@@ -128,13 +128,12 @@ a{
   .social-icon i{
     transform: translate(-1px,1px);
   }
-  .social-fixed > a, .social-fixed span{
+  .social-fixed a, .social-fixed span{
     display: flex;
     align-items: center;
     position: relative;
     border-radius: 50%;
     margin-bottom: 20px;
-    cursor: pointer;
   }
   .social-fixed span{
     animation: callZoom 2s linear infinite;
@@ -213,31 +212,18 @@ a{
     border: 1px solid rgba(196, 39, 39, 0.6)
   }
 
-.phone-now{
+  .phone-now{
     position: absolute;
     bottom: 20px;
-    right: 46px;
+    right: 3px;
     display: block;
+    padding: 10px 40px 8px 20px;
+    background: #dd3333;
     color: #fff;
+    border-radius: 30px;
     font-size: 14px;
     z-index: -1;
-    opacity: 0;
-    visibility: hidden;
-    transition: .3s;
-}
-.phone-now.show{
-    opacity: 1;
-    visibility: visible;
-}
-.phone-now > a{
-    background: #dd3333;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 4px;
-    padding: 8px;
-    border-radius: 5px;
-}
+  }
   
   @keyframes socialShadow {
     0% {

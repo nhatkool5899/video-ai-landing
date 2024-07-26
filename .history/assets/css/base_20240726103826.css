@@ -128,13 +128,12 @@ a{
   .social-icon i{
     transform: translate(-1px,1px);
   }
-  .social-fixed > a, .social-fixed span{
+  .social-fixed a, .social-fixed span{
     display: flex;
     align-items: center;
     position: relative;
     border-radius: 50%;
     margin-bottom: 20px;
-    cursor: pointer;
   }
   .social-fixed span{
     animation: callZoom 2s linear infinite;
@@ -216,27 +215,16 @@ a{
 .phone-now{
     position: absolute;
     bottom: 20px;
-    right: 46px;
+    right: 3px;
     display: block;
+    padding: 10px;
     color: #fff;
     font-size: 14px;
     z-index: -1;
-    opacity: 0;
-    visibility: hidden;
-    transition: .3s;
-}
-.phone-now.show{
-    opacity: 1;
-    visibility: visible;
 }
 .phone-now > a{
     background: #dd3333;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 4px;
-    padding: 8px;
-    border-radius: 5px;
+    display: block;
 }
   
   @keyframes socialShadow {
