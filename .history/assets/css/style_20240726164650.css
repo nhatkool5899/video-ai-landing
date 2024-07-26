@@ -790,11 +790,3 @@
 .partner-item-img{
     background-color: rgba(255, 255, 255, 1);
 }
-.partner-item-img img{
-    display: block;
-}
-
-.partner-name{
-    margin-top: 20px;
-    text-align: center;
-}
