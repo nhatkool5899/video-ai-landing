@@ -148,7 +148,7 @@
                             </div>
                         </div>
                     </div>
-                    <div style="padding-top: 50px;">
+                    <div class="box__content">
                         <div class="wrapper-title">
                             <h2 style="font-size: 29px;">CHÚNG TÔI LÀ ĐỐI TÁC, CHUYÊN GIA ĐÃ THAM GIA ĐÀO TẠO TẠI CÁC TRƯỜNG ĐẠI HỌC DANH TIẾNG HÀNG ĐẦU VIỆT NAM</h2>
                         </div>
@@ -210,9 +210,9 @@
                                 </div>
                                 <div class="partner-item">
                                     <div class="partner-item-img">
-                                        <img src="./assets/imgs/partners/logo-vtv.png" alt="vtv">
+                                        <img src="./assets/imgs/partners/vtv.png" alt="cao-dang-truyen-hinh">
                                     </div>
-                                    <div class="partner-name">Đài truyền hình Việt Nam</div>
+                                    <div class="partner-name">Cao đẳng truyền hình - VTV College</div>
                                 </div>
                                 <div class="partner-item">
                                     <div class="partner-item-img">
@@ -237,34 +237,34 @@
                             <div class="menu">
                                 <ul class="menu-nav">
                                     <li class="nav-item">
-                                        <button data-slide="0" class="nav-button button-64" role="button"><span>1. Sáng tạo nội dung</span></button>
+                                        <span data-slide="0" class="nav-button">1. Sáng tạo nội dung</span>
                                     </li>
                                     <li class="nav-item">
-                                        <button data-slide="1" class="nav-button button-64" role="button"><span>2. Marketing</span></button>
+                                        <span data-slide="1" class="nav-button">2. Marketing</span>
                                     </li>
                                     <li class="nav-item">
-                                        <button data-slide="2" class="nav-button button-64" role="button"><span>3. Thiết kế quảng cáo</span></button>
+                                        <span data-slide="2" class="nav-button">3. Thiết kế quảng cáo</span>
                                     </li>
                                     <li class="nav-item">
-                                        <button data-slide="3" class="nav-button button-64" role="button"><span>4. Nhiếp ảnh</span></button>
+                                        <span data-slide="3" class="nav-button">4. Nhiếp ảnh</span>
                                     </li>
                                     <li class="nav-item">
-                                        <button data-slide="4" class="nav-button button-64" role="button"><span>5. Quay phim</span></button>
+                                        <span data-slide="4" class="nav-button">5. Quay phim</span>
                                     </li>
                                     <li class="nav-item">
-                                        <button data-slide="5" class="nav-button button-64" role="button"><span>6. Sản xuất video quảng cáo bán hàng</span></button>
+                                        <span data-slide="5" class="nav-button">6. Sản xuất video quảng cáo bán hàng</span>
                                     </li>
                                     <li class="nav-item">
-                                        <button data-slide="6" class="nav-button button-64" role="button"><span>7. Mc sự kiện - truyền hình</span></button>
+                                        <span data-slide="6" class="nav-button">7. Mc sự kiện - truyền hình</span>
                                     </li>
                                     <li class="nav-item">
-                                        <button data-slide="7" class="nav-button button-64" role="button"><span>8. Xây dựng hệ thống bán hàng đa kênh</span></button>
+                                        <span data-slide="7" class="nav-button">8. Xây dựng hệ thống bán hàng đa kênh</span>
                                     </li>
                                     <li class="nav-item">
-                                        <button data-slide="8" class="nav-button button-64" role="button"><span>9.  Dựng phim với Capcut</span></button>
+                                        <span data-slide="8" class="nav-button">9.  Dựng phim với Capcut</span>
                                     </li>
                                     <li class="nav-item">
-                                        <button data-slide="9" class="nav-button button-64" role="button"><span>10. Ứng dụng trí tuệ nhân tạo</span></button>
+                                        <span data-slide="9" class="nav-button">10. Ứng dụng trí tuệ nhân tạo</span>
                                     </li>
                                 </ul>
                             </div>
@@ -2302,6 +2302,52 @@
     </div>
 
 
+    <script>
+        (function () {
+            const second = 1000,
+                    minute = second * 60,
+                    hour = minute * 60,
+                    day = hour * 24;
+
+            //I'm adding this section so I don't have to keep updating this pen every year :-)
+            //remove this if you don't need it
+            let today = new Date(),
+                dd = String(today.getDate()).padStart(2, "0"),
+                mm = String(today.getMonth() + 1).padStart(2, "0"),
+                yyyy = today.getFullYear(),
+                nextYear = yyyy + 1,
+                dayMonth = "04/30/",
+                birthday = dayMonth + yyyy;
+            
+            today = mm + "/" + dd + "/" + yyyy;
+            if (today > birthday) {
+                birthday = dayMonth + nextYear;
+            }
+            //end
+            
+            const countDown = new Date(birthday).getTime(),
+                x = setInterval(function() {    
+
+                    const now = new Date().getTime(),
+                        distance = countDown - now;
+
+                    document.getElementById("days").innerText = Math.floor(distance / (day)),
+                    document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+                    document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+                    document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+                    //do something later when date is reached
+                    if (distance < 0) {
+                    document.getElementById("headline").innerText = "It's my birthday!";
+                    document.getElementById("countdown").style.display = "none";
+                    document.getElementById("content").style.display = "block";
+                    clearInterval(x);
+                    }
+                    //seconds
+                }, 0)
+            }());
+    </script>
+
 
     <script>
         var swiper = new Swiper('.swiper', {
@@ -2329,27 +2375,8 @@
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
-            },
-            on: {
-                slideChangeTransitionEnd: function () {
-                    var activeIndex = swiper.realIndex;
-                    updateMenuActiveClass(activeIndex);
-                }
-            },
+            }
         });
-
-        function updateMenuActiveClass(index) {
-            var activeIndex = index;
-            document.querySelectorAll('.nav-button').forEach((button, index) => {
-                if (index === activeIndex) {
-                    button.classList.add('active');
-                } else {
-                    button.classList.remove('active');
-                }
-            });
-        }
-
-        updateMenuActiveClass(0);
 
         document.querySelectorAll('.nav-button').forEach(button => {
             button.addEventListener('click', () => {
@@ -2364,14 +2391,6 @@
         show_phone.addEventListener('click', function() {
             phone_now.classList.toggle('show');
         });
-
-        // document.querySelectorAll('.nav-button').forEach(button => {
-        //     button.addEventListener('click', function() {
-        //         document.querySelectorAll('.nav-button').forEach(btn => btn.classList.remove('active'));
-                
-        //         this.classList.add('active');
-        //     });
-        // });
     </script>
     
 </body>

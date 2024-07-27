@@ -2331,15 +2331,13 @@
                 prevEl: '.swiper-button-prev',
             },
             on: {
-                slideChangeTransitionEnd: function () {
-                    var activeIndex = swiper.realIndex;
-                    updateMenuActiveClass(activeIndex);
-                }
+                transitionEnd: updateMenuActiveClass
             },
         });
 
-        function updateMenuActiveClass(index) {
-            var activeIndex = index;
+        function updateMenuActiveClass() {
+            var activeIndex = swiper.realIndex;
+            console.log(activeIndex);
             document.querySelectorAll('.nav-button').forEach((button, index) => {
                 if (index === activeIndex) {
                     button.classList.add('active');
@@ -2349,7 +2347,7 @@
             });
         }
 
-        updateMenuActiveClass(0);
+        updateMenuActiveClass();
 
         document.querySelectorAll('.nav-button').forEach(button => {
             button.addEventListener('click', () => {

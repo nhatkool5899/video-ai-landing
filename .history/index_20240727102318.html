@@ -2331,15 +2331,17 @@
                 prevEl: '.swiper-button-prev',
             },
             on: {
-                slideChangeTransitionEnd: function () {
+                slidechange: function () {
                     var activeIndex = swiper.realIndex;
+                    console.log('Current slide index:', activeIndex);
                     updateMenuActiveClass(activeIndex);
                 }
             },
         });
 
-        function updateMenuActiveClass(index) {
-            var activeIndex = index;
+        function updateMenuActiveClass() {
+            var activeIndex = swiper.activeIndex;
+            console.log(activeIndex);
             document.querySelectorAll('.nav-button').forEach((button, index) => {
                 if (index === activeIndex) {
                     button.classList.add('active');
@@ -2349,7 +2351,7 @@
             });
         }
 
-        updateMenuActiveClass(0);
+        updateMenuActiveClass();
 
         document.querySelectorAll('.nav-button').forEach(button => {
             button.addEventListener('click', () => {
