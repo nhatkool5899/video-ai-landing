@@ -2310,10 +2310,10 @@
             slidesPerView: 2.5,
             centeredSlides: true,
             loop: true,
-            // autoplay: {
-            //     delay: 4000,
-            //     disableOnInteraction: false,
-            // },
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
             spaceBetween: 30,
             coverflowEffect: {
                 rotate: 2,
@@ -2334,16 +2334,6 @@
                 slideChangeTransitionEnd: function () {
                     var activeIndex = swiper.realIndex;
                     updateMenuActiveClass(activeIndex);
-                }
-            },
-            breakpoints: {
-                320: {
-                    slidesPerView: 1,
-                    spaceBetween: 10,
-                },
-                1024: {
-                    slidesPerView: 2.5,
-                    spaceBetween: 30,
                 }
             }
         });

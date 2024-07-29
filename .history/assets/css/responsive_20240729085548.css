@@ -142,7 +142,7 @@
     }
 
     .title-inner{
-        font-size: 25px;
+        font-size: 26px;
     }
 
     .program__inner.reverse{
@@ -214,96 +214,8 @@
         grid-template-columns: repeat(3,1fr);
     }
 
-
-    .partner-grid{
-        grid-template-columns: repeat(2,1fr);
-        gap: 20px 10px;
-    }
-
-    .partner-name{
-        margin-top: 10px;
-        font-size: 14px;
-    }
-
-    .nav-button{
-        min-width: auto;
-        font-size: 10px;
-    }
-
-    .button-64 span{
-        padding: 6px;
-    }
-
-    .menu-nav{
-        gap: 10px 6px;
-    }
-
-    .content__head{
-        padding: 20px 20px 50px;
-    }
-
-    .content__name{
-        font-size: 18px;
-    }
-
-    .content__part{
-        margin-top: 6px;
-        font-size: 14px;
-    }
-
-    .content__list{
-        margin: 65px 5px 20px 5px;
-        gap: 8px;
-    }
-
-    .content__item{
-        padding: 12px;
-        margin-right: 6px;
-    }
-
-    .content__item .title{
-        font-size: 15px;
-    }
-
-    .content__item .desc{
-        font-size: 14px;
-    }
-
-    .content__image{
-        top: 65%;
-        width: 90px;
-        height: 90px;
-    }
-
-    .content__image img{
-        width: 68px;
-        height: 68px;
-    }
-
-    .swiper-button-next:after, .swiper-button-prev:after{
-        font-size: 25px !important;
-    }
-
-    .swiper-button-next,
-    .swiper-button-prev {
-        display: none;
-    }
-
-    .benefit-inner{
+    .layout__innner{
         grid-template-columns: repeat(1,1fr);
-        gap: 20px;
-    }
-
-    .form__course-head{
-        padding: 14px;
-    }
-
-    .group-box{
-        grid-template-columns: 1fr;
-        padding: 20px;
-    }
-
-    .group-input{
-        padding: 0 20px;
+        gap: 10px;
     }
 }

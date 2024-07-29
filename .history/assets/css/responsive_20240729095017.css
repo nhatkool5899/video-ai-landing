@@ -142,7 +142,7 @@
     }
 
     .title-inner{
-        font-size: 25px;
+        font-size: 26px;
     }
 
     .program__inner.reverse{
@@ -217,12 +217,6 @@
 
     .partner-grid{
         grid-template-columns: repeat(2,1fr);
-        gap: 20px 10px;
-    }
-
-    .partner-name{
-        margin-top: 10px;
-        font-size: 14px;
     }
 
     .nav-button{
@@ -287,23 +281,5 @@
     .swiper-button-next,
     .swiper-button-prev {
         display: none;
-    }
-
-    .benefit-inner{
-        grid-template-columns: repeat(1,1fr);
-        gap: 20px;
-    }
-
-    .form__course-head{
-        padding: 14px;
-    }
-
-    .group-box{
-        grid-template-columns: 1fr;
-        padding: 20px;
-    }
-
-    .group-input{
-        padding: 0 20px;
     }
 }

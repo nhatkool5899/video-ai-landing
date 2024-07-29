@@ -294,10 +294,6 @@
         gap: 20px;
     }
 
-    .form__course-head{
-        padding: 14px;
-    }
-
     .group-box{
         grid-template-columns: 1fr;
         padding: 20px;
