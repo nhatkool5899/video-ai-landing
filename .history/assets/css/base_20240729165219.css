@@ -370,8 +370,8 @@ a{
   z-index: 1;
 }
 
-/* .wheel {
-  transition: transform 4s cubic-bezier(0.25, 0.1, 0.25, 1);
+.wheel {
+  transition: transform 10s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 @keyframes spinAnimation {
@@ -390,7 +390,7 @@ a{
 
 .wheel.spin {
   animation: spinAnimation 10s cubic-bezier(0.25, 0.1, 0.25, 1);
-} */
+}
 
 .button {
   margin: 0 0 40px;

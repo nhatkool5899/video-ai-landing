@@ -348,14 +348,20 @@ a{
   
 
 
+@mixin spins($spin) {
+  from {transform: rotate(0deg)}
+    to {transform: rotate(720deg + $spin * 36deg)}
+}
 
 .spin-container {
   width: 470px;
   margin: 0 auto;
 }
 .spin-title {
-  margin-bottom: 50px;
+  color: #ffffff;
   text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 60px;
 }
 .wrapper {
   margin: 0 0 30px;
@@ -369,28 +375,6 @@ a{
   transform: translateX(-50%);
   z-index: 1;
 }
-
-/* .wheel {
-  transition: transform 4s cubic-bezier(0.25, 0.1, 0.25, 1);
-}
-
-@keyframes spinAnimation {
-  0% { transform: rotate(0deg); }
-  10% { transform: rotate(30deg); }
-  20% { transform: rotate(60deg); }
-  30% { transform: rotate(90deg); }
-  40% { transform: rotate(120deg); }
-  50% { transform: rotate(180deg); }
-  60% { transform: rotate(270deg); }
-  70% { transform: rotate(360deg); }
-  80% { transform: rotate(450deg); }
-  90% { transform: rotate(540deg); }
-  100% { transform: rotate(720deg); }
-}
-
-.wheel.spin {
-  animation: spinAnimation 10s cubic-bezier(0.25, 0.1, 0.25, 1);
-} */
 
 .button {
   margin: 0 0 40px;
@@ -406,4 +390,12 @@ a{
   height: 60px;
   color: #ffffff;
   background: #e01a22;
+  
+  &:hover{
+    background: #f08d90;
+  }
+  
+  &:focus {
+    outline: 0;
+  }
 }
