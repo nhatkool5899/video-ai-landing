@@ -426,7 +426,6 @@ a{
   background: rgba(0, 0, 0, 0.8);
   opacity: 0;
   visibility: hidden;
-  transition: .3s;
 }
 
 .modal.show{
@@ -440,9 +439,6 @@ a{
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-}
-
-.card-body{
   background: #fff;
   padding: 40px;
   text-align: center;

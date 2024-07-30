@@ -319,10 +319,6 @@
     .card{
         max-width: 100%;
         width: 100%;
-        padding: 0 10px;
-    }
-
-    .card-body{
-        padding: 30px 20px;
+        margin: 0 10px;
     }
 }

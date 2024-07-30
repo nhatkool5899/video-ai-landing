@@ -424,9 +424,6 @@ a{
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.8);
-  opacity: 0;
-  visibility: hidden;
-  transition: .3s;
 }
 
 .modal.show{
@@ -440,9 +437,6 @@ a{
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-}
-
-.card-body{
   background: #fff;
   padding: 40px;
   text-align: center;
@@ -471,9 +465,6 @@ a{
   margin: auto;
 }
 
-.card-confirm{
-  margin-top: 40px;
-}
 .card-confirm button{
   outline: 0;
   background: linear-gradient(#5388C5, #2A78DD);
@@ -484,7 +475,7 @@ a{
   margin: 0 15px;
   padding: 15px;
   box-sizing: border-box;
-  color: #fff;
+  color: #000;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;

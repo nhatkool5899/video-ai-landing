@@ -341,29 +341,13 @@ function checkFreeSpin() {
 }
 checkFreeSpin();
 function gift(spin) {
-  if (spin >= 22 && spin >= 338) {
-    $('.spin-gift').text('Chúc mừng bạn đã trúng "Ổ cứng 1 TB"');
-  }
-  if (spin < 338 && spin >= 292) {
-    $('.spin-gift').text('Chúc mừng bạn đã trúng "Voucher 300K"');
-  }
-  if (spin < 292 && spin >= 246) {
-    $('.spin-gift').text('Chúc bạn may mắn lần sau');
-  }
-  if (spin < 246 && spin >= 201) {
-    $('.spin-gift').text('Chúc mừng bạn đã trúng "Voucher 100% học phí"');
-  }
-  if (spin < 201 && spin >= 156) {
-    $('.spin-gift').text('Chúc mừng bạn đã trúng "Áo Design24"');
-  }
-  if (spin < 156 && spin >= 122) {
-    $('.spin-gift').text('Chúc mừng bạn đã trúng "Loa bluetooth"');
-  }
-  if (spin < 112 && spin >= 66) {
-    $('.spin-gift').text('Chúc bạn may mắn lần sau');
-  }
-  if (spin < 66 && spin > 22) {
-    $('.spin-gift').text('Chúc mừng bạn đã trúng "1 USB 32GB"');
+  switch (spin) {
+    case 140 < spin < 360:
+      $('.spin-gift').text('Loa blue')
+      break;
+    case 0 < spin < 140:
+      $('.spin-gift').text('Loa blue')
+      break;
   }
 }
 
@@ -383,7 +367,7 @@ $(".btn").click(function(){
     setTimeout(function(){
         $(".wheel").stopRotate();
         $(".btn").removeClass('disabled');
-        gift(spin);
+        gift(spin)
         $('.modal').addClass('show');
     }, 12000);
   
